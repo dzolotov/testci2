@@ -14,10 +14,13 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("io.qameta.allure:allure-kotlin-model:2.4.0")
+    testImplementation("io.qameta.allure:allure-kotlin-commons:2.4.0")
+    testImplementation("io.qameta.allure:allure-kotlin-junit4:2.4.0")
 }
 
 tasks.test {
-    useJUnitPlatform()
+    useJUnit()
 }
 
 tasks.withType<KotlinCompile> {
