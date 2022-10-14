@@ -6,4 +6,4 @@ fun main(args: Array<String>) {
     println("Program arguments: ${args.joinToString()}")
 }
 
-fun sum(a:Int, b:Int):Int = a+b
+fun sum(a: Int, b: Int): Int = a + b
