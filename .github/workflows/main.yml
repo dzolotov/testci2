@@ -15,5 +15,11 @@ jobs:
         uses: gradle/gradle-build-action@v2
       - name: Run tests
         run: ./gradlew test
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-reports
+          path: |
+            allure-results
 
   
