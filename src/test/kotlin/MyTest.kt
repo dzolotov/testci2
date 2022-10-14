@@ -7,6 +7,6 @@ import org.junit.runner.RunWith
 class MyTest {
     @Test
     fun testSum() {
-        assertEquals(4, sum(2,2))
+        assertEquals(4, sum(2, 2))
     }
 }
